@@ -3,7 +3,7 @@ import axios from 'axios';
 import Weather from './components/weather';
 import './App.css';
 
-
+const apikey = process.env.REACT_APP_VARIABLE_NAME;
 class App extends React.Component {
   constructor(props) {
     super(props);
