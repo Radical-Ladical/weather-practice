@@ -46,7 +46,7 @@ class App extends React.Component {
 
   nullCheck() {
     if(this.state.weather===null){
-      <h2>no information</h2>
+      return<h2>no information</h2>
     }else {
       this.state.weather.list.map(listItem => <Weather/>);
     }
@@ -56,7 +56,7 @@ class App extends React.Component {
     return(
       <div>
         {
-          this.nullcheck()
+          this.nullCheck()
         }
       </div>
     )
